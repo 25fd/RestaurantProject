@@ -80,3 +80,11 @@ footer{
     text-align: center;
     color:  rgb(22, 120, 127);;
 }
+
+.about1, .about2{
+    background-color: lightcyan;
+}
+
+.opn1, .cls1{
+    color: blue;
+}
