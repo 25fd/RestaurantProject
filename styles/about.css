@@ -1,15 +1,12 @@
 #head-nav {
     background-color: rgb(183, 148, 88);
 }
-
 body {
     background-color: rgb(183, 148, 88);
 }
-
 .topnav {
     overflow: hidden;
 }
-
 .topnav a {
     float: left;
     color: #f2f2f2;
@@ -67,7 +64,7 @@ footer {
     text-align: center;
    
 }
-.btn button{
+.btn input{
     color: rgb(133, 25, 39);
     font-size: 20px;
     border-radius: 8px;
@@ -80,3 +77,15 @@ footer{
     text-align: center;
     color:  rgb(22, 120, 127);;
 }
+.Gmap {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#map {
+    text-align: center;
+    height: 300px;
+    width: 600px;
+}
+  
