@@ -1,60 +1,68 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Delicacy kitchen</title>
-    <link rel="stylesheet" href="../styles/style2.css">
-    <link rel="stylesheet" href="../styles/booking-page-style.css">
-    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-  </head>
-  <body>
-    <header>
-      <nav id="head-nav">
-          <section class="brand">
-              <img src="d.jpeg" alt="">
-              <h1> 
-                Delicacy kitchen
-              </h1>
-              <h3>
-                We serve what you deserve
-              </h3>
-          </section>
-          <section class="topnav">
-              <a href="../index.html" class="active">Home</a>
-              <a href="./manu-page.html">Menu</a>
-              <a href="./booking-page.html">Booking</a>
-              <a href="./feedback.html">Feebacks</a>
-              <a href="./about.html">About</a>
-          </section>   
-      </nav>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Delicacy kitchen</title>
+  <link rel="stylesheet" href="../styles/style2.css">
+  <link rel="stylesheet" href="../styles/booking-page-style.css">
+  <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <header>
+    <nav id="head-nav">
+      <section class="brand">
+        <img src="d.jpeg" alt="">
+        <h1>
+          Delicacy kitchen
+        </h1>
+        <h3>
+          We serve what you deserve
+        </h3>
+      </section>
+      <section class="topnav">
+        <a href="../index.html">Home</a>
+        <a href="./manu-page.html">Menu</a>
+        <a href="./booking-page.html" class="active">Booking</a>
+        <a href="./feedback.html">Feebacks</a>
+        <a href="./about.html">About</a>
+      </section>
+    </nav>
   </header>
-    <!-- <main> -->
-        <div class="main">
-            <form action="./booking-confirmation.html">
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
-            
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-            
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email" placeholder="Your email address..">
-            
-                <label for="phone">Phone</label>
-                <input type="text" id="phone" name="phone" placeholder="Your phone number..">
-            
-                <label for="nperson">Numer of person </label>
-                <input type="number" id="nperson" name="nperson" placeholder="Numer of person in reservation">
-              
-                <input type="submit" value="Submit">
-              </form>
-        </div>
-    <!-- </main> -->
-    <footer>
-      Delicacycopyright@2022
-    </footer>
-  </body>
+  <!-- <main> -->
+  <div class="main">
+    <form action="./booking-confirmation.html" method="get">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name.." required><br>
+
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name.." required><br>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your email address.." required><br>
+
+      <label for="phone">Phone</label>
+      <input type="number" minlength="10" maxlength="10" id="phone" name="phone" placeholder="Your phone number.."
+        required><br>
+
+      <label for="nperson">Numer of person </label>
+      <input type="number" min="0" max="100" id="nperson" name="nperson" placeholder="Numer of person in reservation"
+        required><br>
+
+      <label for="datetime">Time </label>
+      <input type="datetime-local" id="datetime" name="datetime" required>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+  <!-- </main> -->
+  <footer>
+    Delicacycopyright@2022
+  </footer>
+</body>
+
 </html>
