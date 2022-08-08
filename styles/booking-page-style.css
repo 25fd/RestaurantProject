@@ -1,6 +1,6 @@
-input[type=text],
+input,
 select {
-    width: 100%;
+    width: 50%;
     height: inherit;
     padding: 12px 20px;
     margin: 8px 0;
@@ -8,6 +8,10 @@ select {
     /* border: 1px solid #ccc;
     border-radius: 4px; */
     /* box-sizing: border-box; */
+}
+
+label {
+    width: 30px;
 }
 
 input[type=submit] {

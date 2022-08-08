@@ -2,19 +2,36 @@
     text-align: center;
     color: blueviolet;
     font-weight: bolder;
-    
+    height: 100%
 }
 
-.desc{
+.desc {
     color: red;
     background-color: wheat;
 }
 
-.location{
+.location {
     border: 7px solid black;
 }
 
-.bc1, .bc2{
+.bc1,
+.bc2 {
     color: black;
     background-color: wheat;
+}
+
+.bookingDetais {
+    margin-left: 25%;
+    margin-bottom: 10px;
+    text-align: justify;
+    height: 50%;
+    width: 50%;
+    border-style: dashed;
+    border-color: black;
+    color: black;
+}
+
+.bookingDetais p {
+    font-family: 'Times New Roman', Times, serif !important;
+    font-size: 14px;
 }
