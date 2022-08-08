@@ -74,9 +74,15 @@ footer {
     display: table;
 }
 .main h1{
+    margin:0;
+    padding:0;
     font-size: 100px;
     text-align: center;
     color: rgb(22, 120, 127);
+}
+.main h6{
+    text-indent:900px;
+    font-size: 15px;
 }
 .main p{
     font-size: 30px;
@@ -85,4 +91,17 @@ footer {
 }
 footer{
     text-align: center;
+}
+.btn{
+    text-align: center;
+   
+}
+.btn button{
+    color: rgb(133, 25, 39);
+    font-size: 15px;
+    border-radius: 8px;
+}
+h5{
+    text-align: center;
+    color: red;
 }

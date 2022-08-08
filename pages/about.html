@@ -32,17 +32,20 @@
     </header>
     <!-- <main> -->
         <div class="main"><br><br>
-          <h3 class="about1">About us</h3>
-          <h1>Delicacy kitchen run by three master pieces of India. They started their journey in 2004 and now they give tough compitition to other restaurant out there in Toronto.</h1>
+          <h3>About us</h3>
+          <h1 id="read">Delicacy kitchen run by three master pieces of India. They started their journey in 2004 and now they give tough compitition to other restaurant out there in Toronto.</h1>
            <div class="btn"> 
-                <button>Read more</button>
+             <input type="button" id="b1" onClick="readMore()" value="Read more">
+             <br>
+            <input type="button" id="b2" onClick="goback()" value="Go back">
            </div> 
             <div class="main1">
                 <h3 class="about2">About Restaurant</h3>
                 <h1>Address : 59 hayden street, Toronto, Ontario.</h1><br>
-                <h1 class="opn1">Opening hours of Every Day Of the Week : 11:00 am</h1>
-                <h1 class="cls1">Closing hours of Every Day Of the Week : 10:00 pm</h1>
-                <map></map>
+                <h1>Opening hours: 11:00 am to 10:00 pm</h1>
+                <div class="Gmap">
+                  <div id="map"></div>
+                </div>
             </div>
         </div>
 
@@ -50,5 +53,39 @@
 <footer>
     Delicacycopyright@2022
 </footer>
-  </body>
+<script>
+
+  document.getElementById("b2").style.visibility = 'hidden';
+    
+  function readMore(){
+    document.getElementById("read").innerHTML = "They worked hard and gave efforts to reach to this level. Their only secret key to the success was to provide best customer service and by doing this they won the race of life and now tey are popular in the town.";
+    document.getElementById("b1").style.visibility = 'hidden';
+    document.getElementById("b2").style.visibility = 'visible';
+  }
+
+  function goback(){
+    document.getElementById("read").innerHTML = "Delicacy kitchen run by three master pieces of India. They started their journey in 2004 and now they give tough compitition to other restaurant out there in Toronto.";
+    document.getElementById("b2").style.visibility = 'hidden';
+    document.getElementById("b1").style.visibility = 'visible';
+  } 
+
+  function initMap() {
+  // The location of Uluru
+  const cord = { lat: 43.669827494139206, lng: -79.38362010832999  };
+  // The map, centered at Uluru
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 18,
+    center: cord,
+  });
+  // The marker, positioned at Uluru
+  const marker = new google.maps.Marker({
+    position: cord,
+    map: map,
+  });
+}
+
+// window.initMap = initMap; 
+</script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"defer> </script>
+</body>
 </html>
