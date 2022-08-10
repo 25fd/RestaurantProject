@@ -74,7 +74,8 @@
     html += `<p>Name: ${vars['firstname']} ${vars['lastname']}</p>`;
     html += `<p>Contact NO.: ${vars['phone']}</p>`;
     html += `<p>Email: ${vars['email'].replace('%40', '@')}</p>`;
-    html += `<p>Time: ${new Date(vars['datetime'].replace('%3A', ':  '))}</p>`;
+    console.log(vars['datetime'].replace('%3A', ':'));
+    html += `<p>Time: ${new Date(vars['datetime'].replace('%3A', ':'))}</p>`;
     html += `<p>No. of person: ${vars['nperson']}</p>`;
     console.log(html)
     return html;
