@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <title>
+            humber health studio
+        </title>
+    </head>
+    <body>
+        <nav id="head-nav">
+        <header>
+            <section class="header">
+                <h1> 
+                 humber health studio
+                </h1>
+                <img src="../../Image/assets/lilyheader.jpg" alt="">
+            </section>   
+        </header>
+        <section class="topnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#classes">classes</a>
+            <a href="#schedule">schedule</a>
+            <a href="#contact">Contact</a>
+            <a href="#store">store</a>
+        </section>  
+        </nav>
+    <div class='main'>
+        <img src="../../Image/assets/lounge.jpg" alt="">
+
+        <h1>health schedule</h1>
+
+        <p>Mats, blocks, and blankets provided. Please arrive 10 minutes before your class begins. Relax in our Serenity Lounge before or after your class.</p>
+       <div>
+        <h1>your preferred choice : </h1>
+        <h1 id = "result"> </h1>
+        <h1>Please select your preferred contact method !!</h1>
+       </div>
+       <div class="abc">
+        <select name="select" id="select" onClick="select()"> 
+            <option  value="skype" > skype</option> 
+            <option  value="email" > email</option>
+            <option  value="phone" > phone</option>
+            </select> 
+    
+            <input type="button" value="choice" onClick="choice()" />
+       </div>
+    </div>
+        <footer class="footer">
+            <h3>
+                Copyright © 2022 Humber Health Studio
+            </h3>
+            <h4>vrushali@ponkia.com</h4>
+        </footer>
+
+        <script>
+        let text
+        function select(){
+            var e = document.getElementById("select");
+            //console.log(e);
+            var value = e.value;
+            //console.log(value);
+            text = e.options[e.selectedIndex].text;
+            console.log(text);
+        }
+
+        function choice(){
+            document.getElementById("result").innerHTML = text;
+        }
+        </script>
+    </body>
+</html>

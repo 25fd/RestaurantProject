@@ -1,0 +1,69 @@
+body{
+  background-color:  #3f2860;    
+}
+#head-nav {
+    background-color: rgb(109, 184, 184);
+    height: 200px;
+}
+.header img {
+    float: right;
+    width: 100px;
+    height: 100px;
+ 
+}
+.header h1{
+    position: relative;
+    text-align: left;
+    font-size: 30px;
+    color: brown;
+    color: #3f2860;
+}
+
+.topnav {
+    overflow: hidden;
+    color: rgb(124, 88, 157);
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.main {
+    height: 500px;
+    width: auto;
+    background-color: rgb(242, 242, 231);
+}
+img{
+    height: 140px;
+    width: 500px;
+    padding-top: 20px;
+    padding-left: 400px;
+}
+.main h1,p{
+    color: #3f2860;
+    text-align: center;
+}
+footer {
+    overflow: hidden;
+    background-color: rgb(109, 184, 184);
+    font-size: 10px;
+    padding: 14px 16px;
+    color: #f2f2f2;
+    height: 40px;
+}
+.footer h3{
+    text-align: center;
+    color: #3f2860;
+}
+.footer h4{
+    text-align: center;
+    text-decoration: underline;
+    color: #3f2860;
+}
+.abc{
+    text-align: center;
+}

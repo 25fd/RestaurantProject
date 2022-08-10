@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Delicacy kitchen</title>
+  <link rel="stylesheet" href="../styles/style2.css">
+  <link rel="stylesheet" href="../styles/feedback-page-style.css">
+  <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <header>
+    <nav id="head-nav">
+      <section class="brand">
+        <img src="d.jpeg" alt="">
+        <h1>
+          Delicacy kitchen
+        </h1>
+        <h3>
+          We serve what you deserve
+        </h3>
+      </section>
+      <section class="topnav">
+        <a href="../index.html">Home</a>
+        <a href="./manu-page.html">Menu</a>
+        <a href="./booking-page.html">Booking</a>
+        <a href="./feedback.html" class="active">Feedback</a>
+        <a href="./about.html">About</a>
+      </section>
+    </nav>
+  </header>
+  <!-- <main> -->
+  <div class="main">
+    <form>
+      <section class="rate">
+        <input type="radio" id="star5" name="rate" value="5" />
+        <label for="star5" title="5 stars">5 stars</label>
+        <input type="radio" id="star4" name="rate" value="4" />
+        <label for="star4" title="4 stars">4 stars</label>
+        <input type="radio" id="star3" name="rate" value="3" />
+        <label for="star3" title="3 stars">3 stars</label>
+        <input type="radio" id="star2" name="rate" value="2" />
+        <label for="star2" title="2 stars">2 stars</label>
+        <input type="radio" id="star1" name="rate" value="1" />
+        <label for="star1" title="1 stars">1 star</label>
+      </section>
+      <br>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name.."><br>
+      <label for="feedback">feedback</label><br>
+      <textarea id="feedback" name="feedback">
+              </textarea>
+    </form>
+    <button onclick="feedback()"> Submit </button>
+    <div id="feedbackListing" class="feedbackListing">
+      <h3> Feedbacks </h3>
+    </div>
+  </div>
+  </div>
+  <!-- </main> -->
+  <footer>
+    Delicacycopyright@2022
+  </footer>
+</body>
+<script>
+  const feedbackData = [{ ratting: 5, name: 'Init', feedback: 'Greate Job' }];
+  const getValues = () => {
+    let ratting = document.querySelector('input[name="rate"]:checked');
+    ratting = ratting ? ratting.value : 0;
+    const name = document.getElementById('name').value;
+    if (!name) alert('Please enter name');
+    let feedback = document.getElementById('feedback');
+    feedback = feedback ? feedback.value : '';
+    console.log({ ratting, name, feedback })
+    feedbackData.push({ ratting, name, feedback });
+    document.getElementById('feedbackListing').innerHTML += createHtml({ ratting, name, feedback })
+  }
+  const createHtml = ({ name, ratting, feedback }) => {
+    return `<section id=feedback>
+              <lable>Name: ${name}</lable> <br>
+              <lable> Star: ${ratting} </lable> &nbsp; &nbsp; &nbsp;
+              <lable> ${feedback}</lable><br>
+            </section>`;
+  }
+  const appendHtml = () => {
+    let html = ''
+    for (const item of feedbackData) {
+      html += createHtml({ name: item.name, ratting: item.ratting, feedback: item.feedback })
+    }
+    console.log(html)
+
+    document.getElementById('feedbackListing').innerHTML += html;
+  }
+  const feedback = () => {
+    getValues();
+  }
+  appendHtml()
+</script>
+
+</html>

@@ -1,0 +1,37 @@
+.card img {
+    float: left;
+    height: 100px;
+    width: 100px;
+}
+
+/* .card h1 {
+    font-size: 12px;
+} */
+
+.card p {
+    float: right;
+    width: auto;
+    font-size: 12px;
+}
+
+.price {
+    color: rgb(201, 25, 25);
+    float: right;
+}
+
+.card {
+    /* border: 10px;
+    border-style: dashed; */
+    height: auto;
+    text-align: center;
+    font-family: arial;
+    /* display: inline; */
+    border-style: dashed;
+    background-color: rgb(92, 136, 176);
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 60px 10px;
+}
+
+.card :hover {
+    background-color: rgb(183, 80, 80);
+}

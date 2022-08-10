@@ -1,0 +1,91 @@
+#head-nav {
+    background-color: rgb(183, 148, 88);
+}
+body {
+    background-color: rgb(183, 148, 88);
+}
+.topnav {
+    overflow: hidden;
+}
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.main {
+    height: 1000px;
+    width: auto;
+    background-color: rgb(223, 225, 185);
+}
+footer {
+    overflow: hidden;
+    background-color: rgb(183, 148, 88);
+    font-size: 17px;
+    padding: 14px 16px;
+    color: #f2f2f2;
+}
+.topnav a.active {
+    background-color: rgb(223, 225, 185);;
+    color: white;
+}
+.brand img {
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+.brand h1{
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    color: brown;
+}
+.brand h3{
+    font-family: fantasy;
+    position: relative;
+    text-align: center;
+}
+.main h3{
+    font-size: 40px;
+    text-align: center;
+    color:  rgb(22, 120, 127);;
+}
+.main h1{
+    font-family: cursive;
+    text-align: center;
+}
+.btn{
+    text-align: center;
+   
+}
+.btn input{
+    color: rgb(133, 25, 39);
+    font-size: 20px;
+    border-radius: 8px;
+}
+footer{
+    text-align: center;
+}
+.main1 h3{
+    font-size: 40px;
+    text-align: center;
+    color:  rgb(22, 120, 127);;
+}
+.Gmap {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#map {
+    text-align: center;
+    height: 300px;
+    width: 600px;
+}
+  
